@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#faf8f5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Muhammad Fazarullah | Junior Web Developer & Data Scientist</title>
+
+  <!-- Meta SEO -->
+  <meta name="description"
+    content="Portfolio of Muhammad Fazarullah - Junior Web Developer & Data Scientist focused on Machine Learning, predictive models, and practical web applications.">
+  <meta name="keywords"
+    content="Muhammad Fazarullah, Data Scientist, Web Developer, Machine Learning, Streamlit, Python, Amikom, Portfolio">
+  <meta name="author" content="Muhammad Fazarullah">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Muhammad Fazarullah | Portfolio">
+  <meta property="og:description"
+    content="Junior Web Developer & Data Scientist with expertise in Machine Learning, Python, and Web Development.">
+  <meta property="og:url" content="https://github.com/pajjeee">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Caveat & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- Floating Island Navigation (Garry Audie Inspired) -->
+  <header class="header" id="header">
+    <nav class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-name">Muhammad Fazarullah</span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="nav-close" id="nav-close" aria-label="Close Menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn-collab">
+          <span>Inquiry/Collab</span>
+          <span class="arrow-glyph">↗</span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Mobile Navigation Overlay Backdrop -->
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="section hero" id="home">
+      <!-- Ambient Studio Spotlight Glow -->
+      <div class="hero-backdrop-glow"></div>
+
+      <!-- Main Visual Stage: Layered 3D Portrait & Typography -->
+      <div class="hero-main-stage">
+        <!-- Floating Handwritten Script: "hi, i'm" -->
+        <div class="hero-greeting" aria-hidden="true">
+          <span>hi, i'm</span>
+        </div>
+
+        <!-- Big Bold Name (Back Layer: Deep Black) -->
+        <div class="hero-name-layer hero-name-back" aria-hidden="true">
+          <span class="name-first">Muhammad</span>
+          <span class="name-last">Fazarullah</span>
+        </div>
+
+        <!-- Cutout Portrait with soft bottom fade -->
+        <div class="hero-portrait-frame">
+          <img src="assets/images/portrait-cutout.png" alt="Muhammad Fazarullah" class="hero-portrait-img" loading="eager">
+        </div>
+
+        <!-- Big Bold Name (Front Layer: Specular Metallic Overlap on Torso) -->
+        <div class="hero-name-layer hero-name-front" aria-hidden="true">
+          <span class="name-first">Muhammad</span>
+          <span class="name-last">Fazarullah</span>
+        </div>
+
+        <!-- Accessible H1 for SEO -->
+        <h1 class="sr-only">Hi, I'm Muhammad Fazarullah - Junior Web Developer & Data Scientist</h1>
+      </div>
+
+      <!-- Hero Bottom Intro & Actions -->
+      <div class="hero-bottom-bar">
+        <div class="badge-status">
+          <span class="status-indicator"></span>
+          <span>Open to Opportunities & Collaborations</span>
+        </div>
+
+        <div class="hero-typewriter">
+          <span class="prefix">I specialize in </span>
+          <span class="type-text" id="type-text"></span>
+          <span class="cursor">&nbsp;</span>
+        </div>
+
+        <p class="hero-description">
+          Informatics graduate passionate about <strong>Data Science</strong>, <strong>Machine Learning</strong>, and
+          <strong>Web Development</strong>. Building intelligent predictive models and transforming data into
+          responsive, practical web applications.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-pill-dark">
+            <i class="fa-solid fa-diagram-project"></i>
+            <span>Explore Projects</span>
+          </a>
+          <a href="https://wa.me/6281271329220?text=Halo%20Muhammad%20Fazarullah,%20saya%20tertarik%20untuk%20berdiskusi%20dengan%20Anda."
+            target="_blank" rel="noopener noreferrer" class="btn btn-pill-light">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Quick WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">Get to Know Me</span>
+          <h2 class="section-title">About <span class="gradient-text">Muhammad Fazarullah</span></h2>
+          <p class="section-subtitle">A blend of computational thinking, data analytical mindset, and web development
+            skills.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Summary Card -->
+          <div class="about-summary glass-card">
+            <div class="about-summary-header">
+              <div class="icon-avatar">
+                <i class="fa-solid fa-code-merge"></i>
+              </div>
+              <div>
+                <h3 class="summary-title">About Me</h3>
+                <p class="summary-role">Junior Web Developer & Data Scientist</p>
+              </div>
+            </div>
+            <p class="summary-body">
+              Informatics graduate focused on <strong>Data Science, Machine Learning, and Web Development</strong>. I
+              enjoy working with data, discovering meaningful patterns, developing predictive models, and building
+              practical, user-friendly web applications that solve real-world problems.
+            </p>
+            <div class="summary-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Strong foundation in algorithm development & predictive modeling</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Hands-on experience in ML deployment with Streamlit</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Responsive frontend engineering & clean UI implementation</span>
+              </div>
+            </div>
+
+            <!-- Stats Ribbon -->
+            <div class="about-stats-ribbon">
+              <div class="stat-item">
+                <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+                <span class="stat-text">Core Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="2026">2022</span>
+                <span class="stat-text">Graduate Year</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="100">0</span><span class="stat-plus">%</span>
+                <span class="stat-text">Dedication</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Personal Info Grid -->
+          <div class="about-info-grid">
+            <div class="info-card glass-card">
+              <div class="info-icon"><i class="fa-regular fa-calendar-days"></i></div>
+              <div class="info-content">
+                <span class="info-label">Birthday</span>
+                <h4 class="info-value">10 August 2004</h4>
+              </div>
+            </div>
+
+            <div class="info-card glass-card">
+              <div class="info-icon"><i class="fa-solid fa-user-graduate"></i></div>
+              <div class="info-content">
+                <span class="info-label">Degree</span>
+                <h4 class="info-value">Bachelor of Informatics</h4>
+              </div>
+            </div>
+
+            <div class="info-card glass-card">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-content">
+                <span class="info-label">Location</span>
+                <h4 class="info-value">Yogyakarta, Indonesia</h4>
+              </div>
+            </div>
+
+            <div class="info-card glass-card">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="info-content">
+                <span class="info-label">Email</span>
+                <h4 class="info-value"><a href="mailto:fazarullah0804@gmail.com">fazarullah0804@gmail.com</a></h4>
+              </div>
+            </div>
+
+            <div class="info-card glass-card">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="info-content">
+                <span class="info-label">Phone / WhatsApp</span>
+                <h4 class="info-value"><a href="tel:+6281271329220">+62 812-7132-9220</a></h4>
+              </div>
+            </div>
+
+            <div class="info-card glass-card">
+              <div class="info-icon"><i class="fa-solid fa-bullseye"></i></div>
+              <div class="info-content">
+                <span class="info-label">Core Focus</span>
+                <h4 class="info-value">Data Science & Web Dev</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">Capabilities</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills & Stack</span></h2>
+          <p class="section-subtitle">Technologies and toolsets I use to analyze data, build algorithms, and develop
+            modern websites.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category: Data Science & ML -->
+          <div class="skill-category-card glass-card">
+            <div class="category-header">
+              <div class="category-icon data-science">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Data Science & Machine Learning</h3>
+                <span class="category-subtitle">Predictive models, algorithms & analysis</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="skill-pill"><i class="fa-solid fa-chart-line"></i> Scikit-Learn</span>
+              <span class="skill-pill"><i class="fa-solid fa-table"></i> Pandas</span>
+              <span class="skill-pill"><i class="fa-solid fa-calculator"></i> NumPy</span>
+              <span class="skill-pill"><i class="fa-solid fa-network-wired"></i> K-Nearest Neighbors (KNN)</span>
+              <span class="skill-pill"><i class="fa-solid fa-diagram-project"></i> Naive Bayes</span>
+              <span class="skill-pill"><i class="fa-solid fa-sliders"></i> Hyperparameter Tuning</span>
+              <span class="skill-pill"><i class="fa-solid fa-filter"></i> Feature Selection</span>
+              <span class="skill-pill"><i class="fa-solid fa-chart-pie"></i> Data Preprocessing</span>
+            </div>
+          </div>
+
+          <!-- Skill Category: Web Development -->
+          <div class="skill-category-card glass-card">
+            <div class="category-header">
+              <div class="category-icon web-dev">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Web Development</h3>
+                <span class="category-subtitle">Interactive apps & frontend engineering</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5</span>
+              <span class="skill-pill"><i class="fa-brands fa-css3-alt"></i> CSS3 / Modern CSS</span>
+              <span class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="skill-pill"><i class="fa-brands fa-php"></i> PHP</span>
+              <span class="skill-pill"><i class="fa-solid fa-rocket"></i> Streamlit Deployment</span>
+              <span class="skill-pill"><i class="fa-solid fa-mobile-screen"></i> Responsive Design</span>
+              <span class="skill-pill"><i class="fa-solid fa-database"></i> Database & SQL</span>
+              <span class="skill-pill"><i class="fa-solid fa-cubes"></i> UI/UX Design Principles</span>
+            </div>
+          </div>
+
+          <!-- Skill Category: Tools & Ecosystem -->
+          <div class="skill-category-card glass-card">
+            <div class="category-header">
+              <div class="category-icon tools">
+                <i class="fa-solid fa-toolbox"></i>
+              </div>
+              <div>
+                <h3 class="category-title">Tools & Environment</h3>
+                <span class="category-subtitle">Version control, notebook environments & servers</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git</span>
+              <span class="skill-pill"><i class="fa-brands fa-github"></i> GitHub</span>
+              <span class="skill-pill"><i class="fa-solid fa-code"></i> VS Code</span>
+              <span class="skill-pill"><i class="fa-solid fa-cloud"></i> Google Colab</span>
+              <span class="skill-pill"><i class="fa-solid fa-book-open"></i> Jupyter Notebook</span>
+              <span class="skill-pill"><i class="fa-solid fa-server"></i> XAMPP / Apache</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">Portfolio</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Interactive Machine Learning web applications and experimental research
+            implementations.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ml-app">Machine Learning Apps</button>
+          <button class="filter-btn" data-filter="research">Research & Colab</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- Project 1: Used Motorbike Price Prediction -->
+          <div class="project-card glass-card" data-category="ml-app">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-motorbike.png" alt="Used Motorbike Price Prediction System"
+                class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://motorapp-dvvz7xtz3xubmshqtq6gbj.streamlit.app/" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+              <span class="project-date-badge"><i class="fa-regular fa-calendar"></i> 25 June, 2025</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-category"><i class="fa-solid fa-microchip"></i> Machine Learning App</span>
+              </div>
+              <h3 class="project-title">Used Motorbike Price Prediction System</h3>
+              <p class="project-desc">
+                Developed a machine learning model to predict used motorbike prices based on selected vehicle features.
+                Performed thorough data preprocessing, feature selection, regression model training, and evaluation
+                before deploying as an interactive web app using Streamlit.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Streamlit</span>
+                <span class="tag">Regression ML</span>
+                <span class="tag">Feature Selection</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://motorapp-dvvz7xtz3xubmshqtq6gbj.streamlit.app/" target="_blank"
+                  rel="noopener noreferrer" class="project-link">
+                  <span>Launch Live Application</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Chronic Kidney Disease Prediction -->
+          <div class="project-card glass-card" data-category="ml-app">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-ckd.png" alt="Chronic Kidney Disease Prediction System"
+                class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://app-chronickidneydisease.streamlit.app/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+              <span class="project-date-badge"><i class="fa-regular fa-calendar"></i> 5 February, 2026</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-category"><i class="fa-solid fa-notes-medical"></i> Healthcare
+                  Classification</span>
+              </div>
+              <h3 class="project-title">Chronic Kidney Disease (CKD) Prediction</h3>
+              <p class="project-desc">
+                Conducted a machine learning project to develop a Chronic Kidney Disease (CKD) prediction system using
+                K-Nearest Neighbors (KNN) and Naive Bayes. Involved end-to-end data preprocessing, feature engineering,
+                hyperparameter optimization, and comparative model evaluation.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">KNN</span>
+                <span class="tag">Naive Bayes</span>
+                <span class="tag">Streamlit</span>
+                <span class="tag">Optimization</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://app-chronickidneydisease.streamlit.app/" target="_blank" rel="noopener noreferrer"
+                  class="project-link">
+                  <span>Launch Live Application</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Google Colab ML Experiments -->
+          <div class="project-card glass-card" data-category="research">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-colab.png" alt="Google Colab Machine Learning Experiments"
+                class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://drive.google.com/drive/folders/1UPbFVhFt7X_TGFmqZAoq--FNw2qIzqt1?usp=drive_link" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Notebook
+                </a>
+              </div>
+              <span class="project-date-badge"><i class="fa-solid fa-flask"></i> Research & EDA</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-category"><i class="fa-solid fa-cloud"></i> Google Colab Research</span>
+              </div>
+              <h3 class="project-title">Google Colab Machine Learning Lab</h3>
+              <p class="project-desc">
+                Comprehensive machine learning experimentation repository featuring exploratory data analysis (EDA),
+                data cleaning pipelines, algorithmic benchmarking, and performance tuning across various structured
+                datasets and modeling paradigms.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Google Colab</span>
+                <span class="tag">EDA</span>
+                <span class="tag">Jupyter</span>
+                <span class="tag">Data Analysis</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://drive.google.com/drive/folders/1UPbFVhFt7X_TGFmqZAoq--FNw2qIzqt1?usp=drive_link" target="_blank"
+                  rel="noopener noreferrer" class="project-link">
+                  <span>View Google Colab Notebook</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates & Credentials Section -->
+    <section class="section certificates" id="certificates">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">Credentials</span>
+          <h2 class="section-title">Verified <span class="gradient-text">Certificates</span></h2>
+          <p class="section-subtitle">Formal professional certifications earned through rigorous course completions and hands-on technical assessments.</p>
+        </div>
+
+        <div class="certificates-grid">
+          <!-- Certificate Card 1: Cisco Data Science Essentials with Python -->
+          <div class="cert-card glass-card">
+            <div class="cert-preview-frame">
+              <img src="assets/images/cert-cisco-datascience.png" alt="Data Science Essentials with Python - Cisco Networking Academy" class="cert-img" loading="lazy">
+              <div class="cert-overlay">
+                <button type="button" class="btn btn-sm btn-pill-dark btn-view-cert"
+                  data-cert-img="assets/images/cert-cisco-datascience.png"
+                  data-cert-title="Data Science Essentials with Python"
+                  data-cert-issuer="Cisco Networking Academy"
+                  data-cert-date="09 October 2026"
+                  data-cert-pdf="assets/certificates/cisco-data-science-essentials.pdf"
+                  aria-label="View Certificate in Fullscreen">
+                  <i class="fa-solid fa-expand"></i>
+                  <span>View Certificate</span>
+                </button>
+              </div>
+              <span class="cert-badge-verified">
+                <i class="fa-solid fa-circle-check"></i> Verified
+              </span>
+            </div>
+
+            <div class="cert-content">
+              <div class="cert-header-meta">
+                <div class="cert-issuer">
+                  <div class="issuer-icon">
+                    <i class="fa-solid fa-network-wired"></i>
+                  </div>
+                  <div>
+                    <h4 class="issuer-name">Cisco Networking Academy</h4>
+                    <span class="cert-date"><i class="fa-regular fa-calendar"></i> Issued: 09 October 2026</span>
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="cert-title">Data Science Essentials with Python</h3>
+
+              <p class="cert-desc">
+                Student level credential demonstrating proficiency in importing CSV data into DataFrames, data cleaning (handling missing values, datatype conversion), exploratory data analysis (EDA), generating visualizations with Matplotlib, hypothesis testing, and fitting linear regression models.
+              </p>
+
+              <div class="cert-skills">
+                <span class="tag">Python</span>
+                <span class="tag">Pandas DataFrames</span>
+                <span class="tag">Data Cleaning</span>
+                <span class="tag">Matplotlib</span>
+                <span class="tag">Linear Modeling</span>
+                <span class="tag">EDA</span>
+              </div>
+
+              <div class="cert-footer">
+                <button type="button" class="cert-action-btn btn-view-cert"
+                  data-cert-img="assets/images/cert-cisco-datascience.png"
+                  data-cert-title="Data Science Essentials with Python"
+                  data-cert-issuer="Cisco Networking Academy"
+                  data-cert-date="09 October 2026"
+                  data-cert-pdf="assets/certificates/cisco-data-science-essentials.pdf">
+                  <span>Enlarge Preview</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <a href="assets/certificates/cisco-data-science-essentials.pdf" target="_blank" rel="noopener noreferrer" class="cert-pdf-link" title="Open PDF">
+                  <i class="fa-regular fa-file-pdf"></i>
+                  <span>PDF Document</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- TEMPLATE FOR FUTURE CERTIFICATE:
+               To add a new certificate in the future, simply duplicate the .cert-card block above,
+               change the image src, title, issuer, date, description, and PDF link.
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">Academic Background</span>
+          <h2 class="section-title">Education & <span class="gradient-text">Journey</span></h2>
+          <p class="section-subtitle">Structured academic foundation combined with continuous hands-on project
+            exploration.</p>
+        </div>
+
+        <div class="education-timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-period"><i class="fa-regular fa-calendar-check"></i> 2022 - 2026</span>
+                  <h3 class="timeline-degree">Bachelor of Informatics (S1 Informatika)</h3>
+                  <h4 class="timeline-institution"><i class="fa-solid fa-building-columns"></i> Universitas Amikom
+                    Yogyakarta</h4>
+                </div>
+                <div class="timeline-badge">Yogyakarta, Indonesia</div>
+              </div>
+
+              <p class="timeline-desc">
+                Focused on software development, relational databases, data processing architectures, and computer
+                science fundamentals. Actively designed and developed academic and personal projects involving machine
+                learning algorithms, data analysis, and web application development.
+              </p>
+
+              <div class="timeline-focus-pills">
+                <span class="pill"><i class="fa-solid fa-code"></i> Software Engineering</span>
+                <span class="pill"><i class="fa-solid fa-database"></i> Database Management</span>
+                <span class="pill"><i class="fa-solid fa-chart-pie"></i> Data Analytics</span>
+                <span class="pill"><i class="fa-solid fa-brain"></i> Applied Machine Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">Get In Touch</span>
+          <h2 class="section-title">Let's Connect & <span class="gradient-text">Collaborate</span></h2>
+          <p class="section-subtitle">Have a project in mind, an opportunity to discuss, or just want to say hi? Feel
+            free to reach out!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Details Cards -->
+          <div class="contact-info-col">
+            <div class="contact-card glass-card">
+              <div class="contact-icon email-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-type">Email Address</span>
+                <h4 class="contact-main">fazarullah0804@gmail.com</h4>
+                <a href="mailto:fazarullah0804@gmail.com" class="contact-action-link">Send Email <i
+                    class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="contact-card glass-card">
+              <div class="contact-icon wa-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-type">WhatsApp / Phone</span>
+                <h4 class="contact-main">+62 812-7132-9220</h4>
+                <a href="https://wa.me/6281271329220?text=Halo%20Muhammad%20Fazarullah,%20saya%20tertarik%20untuk%20berkolaborasi%20dengan%20Anda."
+                  target="_blank" rel="noopener noreferrer" class="contact-action-link">Chat on WhatsApp <i
+                    class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="contact-card glass-card">
+              <div class="contact-icon loc-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-type">Current Location</span>
+                <h4 class="contact-main">Yogyakarta, Indonesia</h4>
+                <span class="contact-sub">Available for Remote & Onsite</span>
+              </div>
+            </div>
+
+            <!-- Social Matrix -->
+            <div class="social-matrix glass-card">
+              <span class="matrix-title">Follow & Connect</span>
+              <div class="matrix-links">
+                <a href="https://github.com/pajjeee" target="_blank" rel="noopener noreferrer" class="matrix-btn"
+                  title="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/muhammad-fazarullah-188018360/" target="_blank"
+                  rel="noopener noreferrer" class="matrix-btn" title="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/faz4a_" target="_blank" rel="noopener noreferrer" class="matrix-btn"
+                  title="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+                <a href="https://x.com/pajjeee?s=11" target="_blank" rel="noopener noreferrer" class="matrix-btn"
+                  title="X (Twitter)">
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <span>Twitter / X</span>
+                </a>
+                <a href="https://www.facebook.com/share/185CZAGYhb/?mibextid=wwXIfr" target="_blank"
+                  rel="noopener noreferrer" class="matrix-btn" title="Facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <span>Facebook</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-col">
+            <div class="contact-form-wrapper glass-card">
+              <h3 class="form-title">Send a Direct Message</h3>
+              <p class="form-desc">Fill out the form below and it will prepare a structured message ready to send via
+                WhatsApp or Email.</p>
+
+              <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                  <label for="name" class="form-label">Your Name</label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="e.g. John Doe" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">Your Email</label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="e.g. john@example.com"
+                      required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject" class="form-label">Subject</label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-bookmark input-icon"></i>
+                    <input type="text" id="subject" name="subject" class="form-input"
+                      placeholder="Project Inquiry / Opportunity" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <div class="input-wrapper textarea-wrapper">
+                    <i class="fa-regular fa-comment-dots input-icon textarea-icon"></i>
+                    <textarea id="message" name="message" class="form-input form-textarea" rows="4"
+                      placeholder="Hello Muhammad Fazarullah, I'd like to discuss..." required></textarea>
+                  </div>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary btn-block" id="btn-submit">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Send Message to Email</span>
+                  </button>
+                  <button type="button" class="btn btn-secondary btn-block" id="btn-send-wa">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>Send via WhatsApp</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <a href="#home" class="footer-logo">
+          <span class="logo-symbol">&lt;/&gt;</span>
+          <span class="logo-text">Muhammad Fazarullah</span>
+        </a>
+        <p class="footer-tagline">Junior Web Developer & Data Scientist &bull; Based in Yogyakarta, Indonesia</p>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; <span id="current-year">2026</span> Muhammad Fazarullah. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/pajjeee" target="_blank" rel="noopener noreferrer" title="GitHub"><i
+              class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/muhammad-fazarullah-188018360/" target="_blank" rel="noopener noreferrer"
+            title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/faz4a_" target="_blank" rel="noopener noreferrer" title="Instagram"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/pajjeee?s=11" target="_blank" rel="noopener noreferrer" title="X"><i
+              class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick WhatsApp Button -->
+  <a href="https://wa.me/6281271329220?text=Halo%20Muhammad%20Fazarullah!" target="_blank" rel="noopener noreferrer"
+    class="floating-wa" title="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="floating-wa-tooltip">Chat with me</span>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="toast">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span id="toast-message" class="toast-message">Message sent successfully!</span>
+  </div>
+
+  <!-- Certificate Viewer Modal (Lightbox) -->
+  <div id="cert-modal" class="cert-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-cert-title">
+    <div class="cert-modal-backdrop" id="cert-modal-backdrop"></div>
+    <div class="cert-modal-container">
+      <div class="cert-modal-header">
+        <div class="cert-modal-meta">
+          <span class="cert-modal-issuer" id="modal-cert-issuer">Cisco Networking Academy</span>
+          <h3 class="cert-modal-title" id="modal-cert-title">Data Science Essentials with Python</h3>
+        </div>
+        <div class="cert-modal-controls">
+          <a href="assets/certificates/cisco-data-science-essentials.pdf" id="modal-cert-download" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-pill-light" title="Open PDF">
+            <i class="fa-regular fa-file-pdf"></i>
+            <span>Open PDF</span>
+          </a>
+          <button type="button" class="cert-modal-close" id="cert-modal-close" aria-label="Close Certificate Preview">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+      <div class="cert-modal-body">
+        <img src="assets/images/cert-cisco-datascience.png" alt="Certificate Preview" id="modal-cert-img" class="cert-modal-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
